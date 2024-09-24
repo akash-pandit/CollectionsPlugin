@@ -1,0 +1,21 @@
+name: Collections
+version: 1.0
+main: io.github.akashpandit.Collections
+description: hypixel skyblock collections but worse
+author: Akash Pandit
+website: https://github.com/akash-pandit/no-repo-created-yet-sadface
+api-version: '1.21.1'
+
+permissions:
+  admin:
+    description: "Administrative access to Collections plugin features"
+    default: op
+  user:
+    description: "Anyone can use"
+    default: not op
+
+commands:
+  collections:
+    description: open the collections menu
+    usage: /collections
+    aliases: [col, c]

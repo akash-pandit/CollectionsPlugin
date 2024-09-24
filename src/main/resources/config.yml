@@ -1,0 +1,35 @@
+mobs:
+  BLAZE: show
+  BOGGED: show
+  BREEZE: show
+  CREEPER: show
+  ELDER_GUARDIAN: show
+  ENDER_DRAGON: show
+  ENDERMAN: show
+  ENDERMITE: show
+  EVOKER: show
+  GHAST: show
+  GUARDIAN: show
+  HOGLIN: show
+  HUSK: show
+  IRON_GOLEM: hide
+  MAGMA_CUBE: show
+  PHANTOM: show
+  PIGLIN: show
+  PIGLIN_BRUTE: show
+  PILLAGER: show
+  RAVAGER: show
+  SHULKER: show
+  SILVERFISH: show
+  SKELETON: show
+  SLIME: show
+  SPIDER: show
+  STRAY: show
+  VINDICATOR: show
+  WARDEN: show
+  WITCH: show
+  WITHER: show
+  WITHER_SKELETON: show
+  ZOMBIE: show
+
+# WARNING: do NOT add more mobs, the plugin will not know how to react to them
