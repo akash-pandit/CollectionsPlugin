@@ -29,7 +29,7 @@ class KillCounter(plugin: Collections) {
         statement = "${statement.dropLast(2)});"
 
         conn.prepareStatement(statement).executeUpdate()
-        return conn;
+        return conn
     }
 
     fun writePlayerMap(player: Player, conn: Connection) {
