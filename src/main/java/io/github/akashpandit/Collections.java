@@ -45,6 +45,6 @@ public class Collections extends JavaPlugin implements Listener {
                 this.getLogger().warning("[WARNING] Invalid mob type in config.yml: " + mobName);
             }
         });
-        this.getLogger().info("[STATUS] Mob list loaded successfully");
+        this.getLogger().info("[STATUxxS] Mob list loaded successfully");
     }
 }
