@@ -34,8 +34,11 @@ class KillCounter(plugin: Collections) {
 
     fun writePlayerMap(player: Player, conn: Connection) {
         val uuid = player.uniqueId
-        val playerMap = this.map[uuid] ?: entityTypeList.associate { it.name to 0 }.toMutableMap()
-        // playerMap created on player login, will always exist
+        var playerMap = this.map[uuid]
+        if (playerMap == null) {
+            playerMap = entityTypeList.associate { it.name to 0 }.toMutableMap()
+            this.map[uuid] = playerMap
+        }
         val update = conn.prepareStatement("INSERT OR REPLACE INTO $tableName ${mapToSql(playerMap)}")
         update.executeUpdate()
     }
